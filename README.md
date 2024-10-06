@@ -30,7 +30,7 @@ To get the project up and running, follow these steps:
 1. Clone the Repository:
 
 ```bash
-  git clone https://github.com/PRITISH-TOMAR/TaskNode
+  https://github.com/PRITISH-TOMAR/TaskNode
   cd TaskNode
 ```
 2. Install dependencies:
@@ -206,7 +206,7 @@ Parameters
 
 
 
-
+* All the links are of deployment version, you can also test the APIs on localhost!
 
  
 *  Error Handling : 
