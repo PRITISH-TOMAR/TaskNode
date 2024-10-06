@@ -37,10 +37,11 @@ const updateInfo = async (req, res) => {
             { 
                 name: name || user.name, 
                 email, 
-             
+                password: hashPass || user.password, 
+                salt: user.salt, 
                 role: role || user.role 
             },
-            { new: true } 
+            { new: true , select: 'name email role'} 
         );
 
         // If the update is successful...
