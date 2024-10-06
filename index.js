@@ -13,10 +13,15 @@ const  userRoute  = require('./Routes/UserRoute')
 const dotenv = require('dotenv')
 dotenv.config({ path: '.env' });
 
-connectToMongoDB(process.env.MONGO_URL)
+
+const url = process.env.MONGO_URL || "mongodb://127.0.0.1:27017/TestDB";
+// In case you do not have MONGO_URI
+
+
+connectToMongoDB(url)  
 
 //.....................................
-
+ 
 
 app.use(express.json())   
 app.use(express.static(path.resolve("./public")))
